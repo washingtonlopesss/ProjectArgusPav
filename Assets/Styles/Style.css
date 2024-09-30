@@ -30,6 +30,7 @@ body {
 
 a {
     color: #ffffff;
+    cursor: pointer;
 }
 
 header {
@@ -142,7 +143,6 @@ header {
     text-align: center;
     background: #A8E063;
     background: linear-gradient(325deg, rgba(168,224,99,1) 0%, rgba(86,171,47,1) 80%);
-
 }
 
 .btn-contact:hover {
@@ -156,6 +156,10 @@ header {
     font-family: GandhiSans;
     color: #ffffff;
     font-size: 18px;
+}
+
+.link-form-budget:hover {
+    transform: translateY(2px);
 }
 
 .dark {
@@ -175,10 +179,15 @@ header {
     z-index: 1000;
 }
 
+#equipment {
+    scroll-margin-top: 120px;
+}
+
 #services {
     width: 80%;
     max-width: 1500px;
     margin: 50px auto;
+    scroll-margin-top: 120px;
 }
 
 #services h2, .carousel h2 {
@@ -234,7 +243,6 @@ header {
 }
 
 .carousel {
-    position: relative;
     width: 100%;
 }
 
@@ -327,6 +335,7 @@ header {
     width: 80%;
     max-width: 1500px;
     margin: 50px auto;
+    scroll-margin-top: 100px;
 }
 
 #contacts h2 {
@@ -459,6 +468,7 @@ textarea {
     color: #1A330E;
     font-size: 16px;
     border-radius: 8px;
+    border: 2px solid;
 }
 
 .form-selection {
@@ -521,7 +531,8 @@ footer {
 #construction {
     width: 80%;
     max-width: 1500px;
-    margin: 50px auto 50px auto;  
+    margin: 50px auto 50px auto; 
+    scroll-margin-top: 120px;
 }
 
 #construction h2 {
