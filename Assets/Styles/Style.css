@@ -21,7 +21,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth 3;
 }
 
 body {
@@ -516,4 +516,53 @@ footer {
     font-size: 20px;
     margin: 0 auto;
     text-align: center;
+}
+
+#construction {
+    width: 80%;
+    max-width: 1500px;
+    margin: 50px auto 50px auto;  
+}
+
+#construction h2 {
+    margin-top: 50px;
+    font-family: GandhiSans;
+    color: #1A330E;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#construction h3 {
+    font-family: GandhiSans;
+    color: #1A330E;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#construction p {
+    font-family: GandhiSans;
+    color: #1A330E;
+    font-size: 20px;
+}
+
+.section-construction {
+    margin: 20px 0 50px 0;
+}
+
+.section-construction hr {
+    margin-top: 10px;
+}
+
+.section-construction p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.section-construction div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-construction div img {
+    width: 30%;
 }
