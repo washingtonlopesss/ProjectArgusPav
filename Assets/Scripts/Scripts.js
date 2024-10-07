@@ -8,15 +8,21 @@ function toggleAccordion(accordion) {
 
 let currentIndex = 0;
 
+function getAdjustedWidth() {
+    return window.innerWidth / window.devicePixelRatio;
+}
+
 function showSlides() {
-    console.log(window.innerWidth)
     const items = document.querySelectorAll('.item');
     const totalItems = items.length;
     let itemsToShow;
 
-    if (window.innerWidth >= 1000) {
+    // Ajuste o cálculo para o tamanho da tela levando em conta o devicePixelRatio
+    const adjustedWidth = getAdjustedWidth();
+
+    if (adjustedWidth >= 1000) {
         itemsToShow = 3;
-    } else if (window.innerWidth > 500) {
+    } else if (adjustedWidth > 500) {
         itemsToShow = 2;
     } else {
         itemsToShow = 1;
@@ -30,11 +36,14 @@ function showSlides() {
     document.querySelector('.prev').classList.toggle('button-disabled', currentIndex === 0);
 }
 
+window.addEventListener('DOMContentLoaded', showSlides);
+window.addEventListener('resize', showSlides);
+
+
 function nextSlide() {
     const items = document.querySelectorAll('.item');
     const totalItems = items.length;
-
-    // Avança para o próximo slide se houver mais itens
+    
     if (currentIndex < totalItems - (window.innerWidth >= 1000 ? 3 : window.innerWidth >= 500 ? 2 : 1)) {
         currentIndex += 1;
         showSlides();
@@ -42,7 +51,6 @@ function nextSlide() {
 }
 
 function prevSlide() {
-    // Volta para o slide anterior se não estiver no início
     if (currentIndex > 0) {
         currentIndex -= 1;
         showSlides();
