@@ -6,47 +6,54 @@ function toggleAccordion(accordion) {
     arrow.classList.toggle('icon-arrow-active')
 }
 
-let currentIndex = 0
+let currentIndex = 0;
 
 function showSlides() {
-    const items = document.querySelectorAll('.item')
-    const totalItems = items.length
+    console.log(window.innerWidth)
+    const items = document.querySelectorAll('.item');
+    const totalItems = items.length;
+    let itemsToShow;
+
+    if (window.innerWidth >= 1000) {
+        itemsToShow = 3;
+    } else if (window.innerWidth > 500) {
+        itemsToShow = 2;
+    } else {
+        itemsToShow = 1;
+    }
 
     items.forEach((item, index) => {
-        item.style.display = (index >= currentIndex && index < currentIndex + 3) ? 'block' : 'none'
+        item.style.display = (index >= currentIndex && index < currentIndex + itemsToShow) ? 'block' : 'none';
     });
 
-    if (currentIndex === totalItems - 3) {
-        document.querySelector('.next').disabled = true
-    } else {
-        document.querySelector('.next').disabled = false
-    }
-
-    if (currentIndex === 0) {
-        document.querySelector('.prev').disabled = true
-    } else {
-        document.querySelector('.prev').disabled = false
-    }
+    document.querySelector('.next').classList.toggle('button-disabled', currentIndex >= totalItems - itemsToShow);
+    document.querySelector('.prev').classList.toggle('button-disabled', currentIndex === 0);
 }
 
 function nextSlide() {
-    const items = document.querySelectorAll('.item')
-    const totalItems = items.length
+    const items = document.querySelectorAll('.item');
+    const totalItems = items.length;
 
-    if (currentIndex < totalItems - 3) {
-        currentIndex += 1
-        showSlides()
+    // Avança para o próximo slide se houver mais itens
+    if (currentIndex < totalItems - (window.innerWidth >= 1000 ? 3 : window.innerWidth >= 500 ? 2 : 1)) {
+        currentIndex += 1;
+        showSlides();
     }
 }
 
 function prevSlide() {
+    // Volta para o slide anterior se não estiver no início
     if (currentIndex > 0) {
-        currentIndex -= 1
-        showSlides()
+        currentIndex -= 1;
+        showSlides();
     }
 }
 
-showSlides();
+
+window.addEventListener('DOMContentLoaded', showSlides);
+window.addEventListener('resize', showSlides);
+
+
 
 function toggleClass(element) {
     const options = document.querySelectorAll('.options-form > div')

@@ -92,7 +92,7 @@ header {
 .img-home {
     background-image: url(../Imagens/Com\ Direitos/ImageHome.jpg);
     width: 100%;
-    height: 600px;
+    height: 60vh;
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -114,8 +114,9 @@ header {
 .btns-contact {
     margin: 25px auto;
     text-align: center;
-    width: 20%;
-    min-width: 400px;
+    width: 80%;
+    max-width: 500px;
+    min-width: 300px;
 }
 
 @keyframes pulo {
@@ -265,7 +266,6 @@ header {
     position: relative;
     padding: 20px;
     width: 100%;
-    height: 700px;
     border-radius: 10px;
     background-color: white;
     text-align: center;
@@ -289,6 +289,10 @@ header {
     margin: 0;
 }
 
+.item div {
+    margin-bottom: 80px;
+}
+
 .item button {
     width: calc(100% - 40px);
     height: 60px;
@@ -309,21 +313,33 @@ header {
     border: 2px solid #1A330E;
 } 
 
+.item img {
+    width: 100%;
+}
+
 .btns {
     margin: 20px auto;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .btn {
-    width: 100px;
+    width: 50px;
     height: 40px;
     border-radius: 8px;
     border: none;
     background-color: transparent;
     color: #1A330E;
     border: 1px solid #1A330E;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    font-size: 12px !important;
+}
+
+.button-disabled {
+    opacity: 0.4;
 }
 
 .btn:hover {
@@ -576,4 +592,52 @@ footer {
 
 .section-construction div img {
     width: 30%;
+}
+
+
+@media (max-width: 700px) {
+    .list-header {
+        display: none;
+    }
+
+    .options-form {
+        display: block;
+    }
+
+    .options-form div {
+        margin-top: 10px;
+    }
+
+    .btns-form {
+        display: block;
+    }
+
+    .btns-form button {
+        margin-top: 10px;
+    }
+
+    footer {
+        height: 100%;
+    }
+
+    .footer-container {
+        display: block;
+    }
+
+    .footer-nav {
+        margin: 20px;
+    }
+
+    .footer-rights {
+        height: 100px;
+    }
+
+    .contacts {
+        display: block;
+    }
+
+    .contact-item {
+        margin-top: 10px;
+        width: 100%;
+    }
 }
