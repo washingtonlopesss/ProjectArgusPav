@@ -51,7 +51,7 @@ header {
     justify-content: space-between;
     width: 80%;
     max-width: 1500px;
-    height: 100px;
+    height: clamp(80px, 10vw, 100px);
     margin-left: -15px;
 }
 
@@ -60,22 +60,22 @@ header {
 }
 
 .imgs-header img {
-    height: 80px;
+    height: clamp(60px, 10vw, 80px);
 }
 
 .list-header {
-    gap: 10px;
+    gap: clamp(5px, 2vw, 10px);
     display: flex;
 }
 
 .list-header li {
-    font-size: 24px;
+    font-size: clamp(18px, 2vw, 24px);
     font-family: GandhiSans;
     color: #ffffff;
 }
 
 .list-header li a {
-    padding: 10px;
+    padding: clamp(5px, 1vw, 10px);
 }
 
 .list-header li a:hover {
@@ -83,7 +83,7 @@ header {
 }
 
 #home {
-    padding-top: 100px;
+    padding-top: clamp(80px, 10vw, 100px);
     background-color: #1A330E;
     height: 100%;
     min-height: 100vh;
@@ -92,7 +92,8 @@ header {
 .img-home {
     background-image: url(../Imagens/Com\ Direitos/ImageHome.jpg);
     width: 100%;
-    height: 60vh;
+    height: 100%;
+    min-height: 60vh;
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -106,6 +107,7 @@ header {
     font-family: Nexa;
     color: #ffffff;
     font-size: 48px;
+    font-size: clamp(30px, 10vw, 48px);
     width: 80%;
     max-width: 1500px;
     text-align: center;
@@ -134,7 +136,7 @@ header {
 .btn-contact {
     animation: pulo 2s infinite;
     width: 100%;
-    height: 60px;
+    height: clamp(50px, 2vw, 60px);
     margin: 10px 0;
     font-family: GandhiSans;
     color: #ffffff;
@@ -171,11 +173,11 @@ header {
     font-family: Nexa;
     font-weight: ExtraLigth;
     color: #ffffff;
-    font-size: 32px;
+    font-size: clamp(18px, 1.8vw, 32px);;
     width: 80%;
     max-width: 1500px;
     text-align: center;
-    padding: 50px 0;
+    padding: clamp(20px, 3vw, 50px) 0;
     margin: 0 auto;
     z-index: 1000;
 }
@@ -194,14 +196,14 @@ header {
 #services h2, .carousel h2 {
     font-family: GandhiSans;
     color: #1A330E;
-    font-size: 32px;
+    font-size: clamp(24px, 2vw, 32px);
     font-weight: bold;
 }
 
 #services p, .carousel p {
     font-family: GandhiSans;
     color: #1A330E;
-    font-size: 20px;
+    font-size: clamp(16px, 2vw, 20px);
 }
 
 .services-acordion {
@@ -222,7 +224,7 @@ header {
     background-color: transparent;
     font-family: GandhiSans;
     color: #1A330E;
-    font-size: 24px;
+    font-size: clamp(20px, 2vw, 24px);
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -232,6 +234,7 @@ header {
 .accordion-body {
     text-align: justify;
     display: none;
+    font-size: clamp(18px, 2vw, 24px);
 }
 
 .body-active {
@@ -255,7 +258,7 @@ header {
 
 .carousel-inner {
     display: flex;
-    margin: 25px auto 0 auto;
+    margin: clamp(15px, 2vw, 25px) auto 0 auto;
     transition: transform 0.5s ease;
     width: 80%;
     max-width: 1500px;
@@ -285,17 +288,18 @@ header {
 
 }
 
-.item div h2, .item div p {
+.item div h3, .item div p {
     margin: 0;
+    font-size: clamp(16px, 2vw, 20px);
 }
 
 .item div {
-    margin-bottom: 80px;
+    margin-bottom: clamp(70px, 10vw, 80px);;
 }
 
 .item button {
     width: calc(100% - 40px);
-    height: 60px;
+    height: clamp(50px, 10vw, 60px);
     position: absolute;
     bottom: 20px;
     left: 20px;
@@ -357,19 +361,19 @@ header {
 #contacts h2 {
     font-family: GandhiSans;
     color: #1A330E;
-    font-size: 32px;
+    font-size: clamp(24px, 2vw, 32px);
     font-weight: bold;
 }
 
 #contacts p {
     font-family: GandhiSans;
     color: #1A330E;
-    font-size: 20px;
+    font-size: clamp(16px, 2vw, 20px);
 }
 
 .contacts {
     gap: 25px;
-    margin: 15px 0;
+    margin: clamp(10px, 2vw, 15px) 0;
     display: flex;
     width: 100%;
 }
@@ -422,7 +426,7 @@ header {
 label {
     font-family: GandhiSans;
     color: #1A330E;
-    font-size: 20px;
+    font-size: clamp(16px, 2vw, 20px);
     margin: 15px 0 5px 0; 
 }
 
@@ -509,19 +513,30 @@ footer {
     display: flex;
     width: 80%;
     max-width: 1500px;
-    margin: 50px auto;   
-    justify-content: space-between;
-    align-items: center;
+    margin: 50px auto;
+    padding: 0 ;
 }
 
 .footer-container div {
     width: 100%;
 }
 
-.footer-contact ul li, .footer-nav ul li{
+.footer-nav ul li { 
+    margin: 5px;
+}
+
+.footer-nav {
+    padding: 0;
+}
+
+.footer-contact ul li, .footer-nav ul li {
     text-align: center;
     font-family: GandhiSans;
     font-size: 20px;
+}
+
+.footer-contact ul li {
+    font-size: clamp(16px, 2vw, 20px);
 }
 
 .footer-nav li a:hover {
@@ -539,7 +554,7 @@ footer {
     max-width: 1500px;
     font-family: GandhiSans;
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: clamp(16px, 2vw, 20px);
     margin: 0 auto;
     text-align: center;
 }
@@ -555,21 +570,21 @@ footer {
     margin-top: 50px;
     font-family: GandhiSans;
     color: #1A330E;
-    font-size: 32px;
+    font-size: clamp(24px, 2vw, 32px);
     font-weight: bold;
 }
 
 #construction h3 {
     font-family: GandhiSans;
     color: #1A330E;
-    font-size: 20px;
+    font-size: clamp(20px, 2vw, 24px);
     font-weight: bold;
 }
 
 #construction p {
     font-family: GandhiSans;
     color: #1A330E;
-    font-size: 20px;
+    font-size: clamp(16px, 2vw, 20px);
 }
 
 .section-construction {
@@ -594,12 +609,45 @@ footer {
     width: 30%;
 }
 
+.icon-menu {
+    display: none !important;
+}
 
-@media (max-width: 700px) {
+@media (max-width: 850px) { 
     .list-header {
         display: none;
     }
 
+    .icon-menu {
+        display: block !important;
+        color: #ffffff;
+        font-size: 40px !important;
+    }
+
+    .options-form {
+        margin: 10px 0;
+        gap: 0px;
+    }
+
+    .options-form div {
+        margin: 5px 0;
+        height: clamp(50px, 2vw, 60px);
+    }
+
+    input {
+        height: 50px;
+    }
+
+    label {
+        margin: 10px 0 2px 0; 
+    }
+
+    .btns-form buttom {
+        height: 50px;
+    }
+}
+
+@media (max-width: 700px) {
     .options-form {
         display: block;
     }
@@ -625,7 +673,7 @@ footer {
     }
 
     .footer-nav {
-        margin: 20px;
+        margin: 25px 0;
     }
 
     .footer-rights {
@@ -638,6 +686,14 @@ footer {
 
     .contact-item {
         margin-top: 10px;
+        width: 100%;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .section-construction div img {
         width: 100%;
     }
 }
