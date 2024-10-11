@@ -193,3 +193,13 @@ function locacao() {
 
     smoothScroll(document.getElementById('contacts'), 2000);
 }
+
+function menuToggle() {
+    const open = document.querySelector('#menu-open')
+    const close = document.querySelector('#menu-close')
+    const menu = document.querySelector('.list-header')
+
+    open.classList.toggle('icon-menu-active')
+    close.classList.toggle('icon-close-active')
+    menu.classList.toggle('mobile-list')
+}

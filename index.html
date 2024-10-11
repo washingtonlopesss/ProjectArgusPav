@@ -18,13 +18,14 @@
                 <img src="Assets/Branding/TextoTransparente.png" alt="Texto Logo Argus">
             </div>
             <ul class="list-header">
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#services">Serviços</a></li>
-                <li><a href="#construction">Obras</a></li>
-                <li><a href="#equipment">Equipamentos</a></li>
-                <li><a href="#contacts">Contatos</a></li>
+                <li><a href="#home" onclick="menuToggle()">Inicio</a></li>
+                <li><a href="#services" onclick="menuToggle()">Serviços</a></li>
+                <li><a href="#construction" onclick="menuToggle()">Obras</a></li>
+                <li><a href="#equipment" onclick="menuToggle()">Equipamentos</a></li>
+                <li><a href="#contacts" onclick="menuToggle()">Contatos</a></li>
             </ul>
-            <span class="icon-menu material-symbols-outlined">menu</span>
+            <span id="menu-open" onclick="menuToggle()" class="icon-menu-active icon-menu material-symbols-outlined">menu</span>
+            <span id="menu-close" onclick="menuToggle()" class="icon-close material-symbols-outlined">close</span>
         </div>
     </header>
     <section id="home">

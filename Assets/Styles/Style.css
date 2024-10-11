@@ -609,19 +609,43 @@ footer {
     width: 30%;
 }
 
-.icon-menu {
+.icon-menu, .icon-close {
     display: none !important;
+    color: #ffffff;
+    font-size: 40px !important;
 }
 
 @media (max-width: 850px) { 
+    .icon-close-active {
+        display: block !important;
+    }
+
+    .icon-menu-active {
+        display: block !important;
+    }
+
     .list-header {
         display: none;
     }
 
-    .icon-menu {
-        display: block !important;
-        color: #ffffff;
-        font-size: 40px !important;
+    .mobile-list {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -10;
+        background-color: #1A330E;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .mobile-list li a {
+        font-size: 25px;
+        margin: 3px;
+        padding: 5px;
     }
 
     .options-form {
@@ -696,4 +720,11 @@ footer {
     .section-construction div img {
         width: 100%;
     }
+}
+
+@media (max-width: 500px) {
+    .container-header, .img-home h1, .container-home p, #services, .carousel h2, .carousel p, .carousel-inner, #contacts, .footer-container, .footer-rights p, #construction {
+        width: 85%;
+    }
+    
 }
