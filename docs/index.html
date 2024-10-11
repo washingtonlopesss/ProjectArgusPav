@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="description" content="Argus - Especialista em soluções completas de infraestrutura, pavimentação e obras de saneamento. Construindo o futuro com qualidade e segurança.">
+    <meta name="keywords" content="infraestrutura, pavimentação, obras de saneamento, terraplanagem, drenagem, Argus">
+    <meta property="og:title" content="Argus - Pavimentação e Soluções de Infraestrutura">
+    <meta property="og:description" content="Descubra nossos serviços de pavimentação e infraestrutura.">
+    <meta property="og:image" content="/docs/branding/icone-verde-transparente.png">
+    <meta property="og:url" content="https://www.seusite.com">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <title>Argus</title>
+
+    <link rel="icon" href="/docs/branding/icone-verde-transparente.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="/docs/css/home.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body>
+    <header>
+        <div class="container-header">
+            <div class="imgs-header">
+                <img src="/docs/branding/icone-verde-transparente.png" alt="Icone Logo Argus">
+                <img src="/docs/branding/texto-verde-transparente.png" alt="Texto Logo Argus">
+            </div>
+            <ul class="list-header">
+                <li><a href="#home" onclick="menuToggle()">Inicio</a></li>
+                <li><a href="#services" onclick="menuToggle()">Serviços</a></li>
+                <li><a href="#construction" onclick="menuToggle()">Obras</a></li>
+                <li><a href="#equipment" onclick="menuToggle()">Equipamentos</a></li>
+                <li><a href="#contacts" onclick="menuToggle()">Contatos</a></li>
+            </ul>
+            <span id="menu-open" onclick="menuToggle()" class="icon-menu-active icon-menu material-symbols-outlined">menu</span>
+            <span id="menu-close" onclick="menuToggle()" class="icon-close material-symbols-outlined">close</span>
+        </div>
+    </header>
+    <section id="home">
+        <div class="container-home">
+            <div class="img-home">
+                <h1>Construindo o Futuro: Pavimentação, Infraestrutura e Soluções Integradas</h1>
+                <div class="btns-contact">
+                    <button class="btn-contact" onclick="contato()">Entre em Contato</button>
+                    <a class="link-form-budget" onclick="orcamento()">Solicite um orçamento</a>
+                </div>
+            </div>
+            <p>Bem-vindo à Argus, especialista em soluções completas de infraestrutura. Com dedicação e precisão, executamos projetos de pavimentação, redes de água e esgoto, terraplanagem, guias, sarjetas e drenagem de águas pluviais. Nosso compromisso é entregar obras de alta qualidade, superando as expectativas dos nossos clientes e contribuindo para o desenvolvimento urbano.</p>
+        </div>
+    </section>
+    <section id="services">
+        <h2>Nossos Serviços</h2>
+        <p>Oferecemos uma ampla gama de serviços de obras, todos realizados com o mais alto padrão de qualidade e segurança.</p>
+        <div class="services-acordion">
+            <div class="accordion" onclick="toggleAccordion(this)">
+                <div class="accordion-head">
+                    <span>Terraplanagem</span>
+                    <span class="icon-arrow material-symbols-outlined">keyboard_arrow_down</span>
+                </div>
+                <p class="accordion-body">A terraplanagem é o processo de preparação e nivelamento do solo para a construção de estruturas como estradas, edifícios e outros projetos de infraestrutura. Ela envolve atividades como escavação, corte, aterro e compactação do terreno, a fim de garantir uma base estável e uniforme para o desenvolvimento das obras. O objetivo principal é corrigir irregularidades no solo, eliminando desníveis e promovendo uma superfície adequada para a construção. A terraplanagem é essencial para evitar problemas estruturais futuros, como afundamentos ou rachaduras no pavimento.</p>
+            </div>
+            <div class="accordion" onclick="toggleAccordion(this)">
+                <div class="accordion-head">
+                    <span>Saneamento</span>
+                    <span class="icon-arrow material-symbols-outlined">keyboard_arrow_down</span>
+                </div>
+                <p class="accordion-body">O saneamento envolve o conjunto de medidas voltadas para preservar a saúde pública através do manejo adequado de água, esgoto e resíduos. Ele abrange a captação, tratamento e distribuição de água potável, além da coleta e tratamento de esgoto, drenagem de águas pluviais e gerenciamento de resíduos sólidos. A infraestrutura de saneamento tem como objetivo prevenir a contaminação do meio ambiente e reduzir a propagação de doenças, promovendo melhores condições de vida. É um dos pilares para o desenvolvimento sustentável e a qualidade de vida em áreas urbanas e rurais.</p>
+            </div>
+            <div class="accordion" onclick="toggleAccordion(this)">
+                <div class="accordion-head">
+                    <span>Infraestrutura</span>
+                    <span class="icon-arrow material-symbols-outlined">keyboard_arrow_down</span>
+                </div>
+                <p class="accordion-body">A infraestrutura de ruas envolve a construção e manutenção de sistemas que garantem a mobilidade e segurança nas áreas urbanas e rurais. Isso inclui a pavimentação das vias, drenagem de águas pluviais, instalação de guias e sarjetas, sinalização de trânsito e redes subterrâneas de água, esgoto. Uma boa infraestrutura de ruas é essencial para garantir o fluxo eficiente de veículos e pedestres, minimizar enchentes e danos ao pavimento, além de proporcionar uma melhor qualidade de vida para a população.</p>
+            </div>
+        </div>
+        <div class="btns-contact">
+            <button class="btn-contact" onclick="contato()">Entre em Contato</button>
+            <a class="link-form-budget dark" onclick="orcamento()">Solicite um orçamento</a>
+        </div>
+    </section>
+    <section id="construction">
+        <h2>Obras</h2>
+        <p>Confira alguns de nossos projetos concluídos, que demonstram nossa experiência e compromisso com a qualidade.</p>
+        <div class="section-construction">
+            <h3>Rodovia Ayrton Senna</h3>
+            <h3>Recuperação Estrutural da Rodovia Ayrton Senna – Ecopistas</h3>
+            <hr>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat numquam neque asperiores deserunt provident, maxime omnis velit, maiores minus delectus laborum ipsum quibusdam molestias laudantium nihil nisi. Dolores, natus laborum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias deserunt mollitia soluta ullam quaerat nulla voluptatibus nisi quia. Debitis rem maiores neque tempora sit velit, ex nam optio nisi officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus unde facere delectus sed aliquid earum explicabo illum dolorum? Magnam, explicabo? Dolor iure esse eum quaerat? Vero eius ipsam nihil sapiente!</p>
+            <div>
+                <img src="/docs/images/others/obras-recuperacao.jpg" alt="">
+                <img class="mobile" src="/docs/images/others/obras-recuperacao.jpg" alt="">
+                <img class="mobile" src="/docs/images/others/obras-recuperacao.jpg" alt="">
+            </div>
+        </div>
+        <div class="section-construction">
+            <h3>Rodovia Ayrton Senna</h3>
+            <h3>Recuperação Estrutural da Rodovia Ayrton Senna – Ecopistas</h3>
+            <hr>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat numquam neque asperiores deserunt provident, maxime omnis velit, maiores minus delectus laborum ipsum quibusdam molestias laudantium nihil nisi. Dolores, natus laborum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias deserunt mollitia soluta ullam quaerat nulla voluptatibus nisi quia. Debitis rem maiores neque tempora sit velit, ex nam optio nisi officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus unde facere delectus sed aliquid earum explicabo illum dolorum? Magnam, explicabo? Dolor iure esse eum quaerat? Vero eius ipsam nihil sapiente!</p>
+            <div>
+                <img src="/docs/images/others/obras-recuperacao.jpg" alt="">
+                <img class="mobile" src="/docs/images/others/obras-recuperacao.jpg" alt="">
+                <img class="mobile" src="/docs/images/others/obras-recuperacao.jpg" alt="">
+            </div>
+        </div>
+        <div class="btns-contact">
+            <button class="btn-contact" onclick="contato()">Entre em Contato</button>
+            <a class="link-form-budget dark" onclick="orcamento()">Solicite um orçamento</a>
+        </div>
+    </section>
+    <section id="equipment" class="carousel">
+        <h2>Nossos Equipamentos</h2>
+        <p>Equipamentos modernos para garantir a excelência em cada projeto.</p>
+        <div class="carousel-inner">
+            <div class="item">
+                <img src="/docs/images/equipaments/fresadora.png">
+                <div>
+                    <h3>Fresadora</h3>
+                    <p>LARGURA DE CORTE: 1 METRO</p>
+                    <p>Nº DE BITS FRESAGEM CONVENCIONAL: 100 UND</p>
+                    <h3>DADOS PARA TRANSPORTE</h3>
+                    <p>COMPRIMENTO (M): 13,45</p>
+                    <p>LARGURA (M): 2,55</p>
+                    <p>ALTURA (M): 3,10</p>
+                    <p>PESO (KG): 17.400,00</p>
+                </div>
+                <button onclick="locacao()">Tenho interesse</button>
+            </div>
+            <div class="item">
+                <img src="/docs/images/equipaments/rolo-compactador.png">
+                <div>
+                    <h3>Rolo Compactador</h3>
+                    <p>LARGURA DE CORTE: 1 METRO</p>
+                    <p>Nº DE BITS FRESAGEM CONVENCIONAL: 100 UND</p>
+                    <h3>DADOS PARA TRANSPORTE</h3>
+                    <p>COMPRIMENTO (M): 13,45</p>
+                    <p>LARGURA (M): 2,55</p>
+                    <p>ALTURA (M): 3,10</p>
+                    <p>PESO (KG): 17.400,00</p>
+                </div>
+                <button onclick="locacao()">Tenho interesse</button>
+            </div>
+            <div class="item">
+                <img src="/docs/images/equipaments/caminhao-espargidor.png">
+                <div>
+                    <h3>Caminhão Espargidor</h3>
+                    <p>LARGURA DE CORTE: 1 METRO</p>
+                    <p>Nº DE BITS FRESAGEM CONVENCIONAL: 100 UND</p>
+                    <h3>DADOS PARA TRANSPORTE</h3>
+                    <p>COMPRIMENTO (M): 13,45</p>
+                    <p>LARGURA (M): 2,55</p>
+                    <p>ALTURA (M): 3,10</p>
+                    <p>PESO (KG): 17.400,00</p>
+                </div>
+                <button onclick="locacao()">Tenho interesse</button>
+            </div>
+            <div class="item">
+                <img src="/docs/images/equipaments/minipa.png">
+                <div>
+                    <h3>Mini Pá Carregadeira</h3>
+                    <p>LARGURA DE CORTE: 1 METRO</p>
+                    <p>Nº DE BITS FRESAGEM CONVENCIONAL: 100 UND</p>
+                    <h3>DADOS PARA TRANSPORTE</h3>
+                    <p>COMPRIMENTO (M): 13,45</p>
+                    <p>LARGURA (M): 2,55</p>
+                    <p>ALTURA (M): 3,10</p>
+                    <p>PESO (KG): 17.400,00</p>
+                </div>
+                <button onclick="locacao()">Tenho interesse</button>
+            </div>
+            <div class="item">
+                <img src="/docs/images/equipaments/mini-escavadeira.png">
+                <div>
+                    <h3>Mini Escavadeira</h3>
+                    <p>LARGURA DE CORTE: 1 METRO</p>
+                    <p>Nº DE BITS FRESAGEM CONVENCIONAL: 100 UND</p>
+                    <h3>DADOS PARA TRANSPORTE</h3>
+                    <p>COMPRIMENTO (M): 13,45</p>
+                    <p>LARGURA (M): 2,55</p>
+                    <p>ALTURA (M): 3,10</p>
+                    <p>PESO (KG): 17.400,00</p>
+                </div>
+                <button onclick="locacao()">Tenho interesse</button>
+            </div>
+            <div class="item">
+                <img src="/docs/images/equipaments/maquina-termofusao.png">
+                <div>
+                    <h3>Máquina de Solda de Termofusão</h3>
+                    <p>LARGURA DE CORTE: 1 METRO</p>
+                    <p>Nº DE BITS FRESAGEM CONVENCIONAL: 100 UND</p>
+                    <h3>DADOS PARA TRANSPORTE</h3>
+                    <p>COMPRIMENTO (M): 13,45</p>
+                    <p>LARGURA (M): 2,55</p>
+                    <p>ALTURA (M): 3,10</p>
+                    <p>PESO (KG): 17.400,00</p>
+                </div>
+                <button onclick="locacao()">Tenho interesse</button>
+            </div>
+        </div>
+        <div class="btns">
+            <button class="btn prev material-symbols-outlined" onclick="prevSlide()">arrow_back_ios</button>
+            <button class="btn next material-symbols-outlined" onclick="nextSlide()">arrow_forward_ios</button>
+        </div>
+    </section>
+    <section id="contacts">
+        <h2>Contatos</h2>
+        <p>Fale conosco e faça um orçamento! Estamos prontos para ajudar.</p>
+        <div class="contacts">
+            <div class="contact-item">
+                <p>E-mail: contato@arguspav.com</p>
+                <p>Telefone: +55 11 9 0000 0000</p>
+            </div>
+            <p class="contact-item">Endereço: Av. Brig. Faria Lima, 3477 - 18º Andar - Itaim Bibi, São Paulo - SP, 04538-133</p>
+        </div>
+        <p>Nos envie um e-mail, basta escolher um dos Formulários abaixo para nos contatar.</p>
+        <div class="options-form">
+            <div class="opt-selection" id="contato" onclick="toggleClass(this)">Entre em Contato</div>
+            <div id="orcamento" onclick="toggleClass(this)">Peça um Orçamento</div>
+            <div id="locacao" onclick="toggleClass(this)">Locação de Equipamentos</div>
+            <div id="trabalhe-conosco" onclick="toggleClass(this)">Trabalhe Conosco</div>
+        </div> 
+
+        <form action="https://api.staticforms.xyz/submit" method="post" class="form-contato">
+            <input type="hidden" name="accessKey" value="eab2eadb-5b26-4aff-8687-9ebe2bd9f3d5">
+            <label for="nome_contato">Nome:</label>
+            <input type="text" id="nome_contato" name="$Nome" class="input-contato" placeholder="Digite seu nome aqui . . ." required><br>
+            <label for="email_contato">E-mail:</label>
+            <input type="email" id="email_contato" name="$E-mail" class="input-contato" placeholder="Digite seu e-mail aqui . . ." required><br>
+            <label for="telefone_contato">Telefone:</label>
+            <input type="tel" id="telefone_contato" name="$Telefone" class="input-contato" placeholder="Digite seu telefone aqui . . ." required><br>
+            <label for="empresa_contato">Empresa:</label>
+            <input type="text" id="empresa_contato" name="$Empresa" class="input-contato" placeholder="Digite o nome da empresa aqui . . ."><br>
+            <input type="hidden" id="assunto_contato" name="subject" class="input-contato" required value="CONTATO VIA WEBSITE">
+            <label for="mensagem_contato">Mensagem:</label>
+            <textarea id="mensagem_contato" name="$Mensagem" class="textarea-contato" placeholder="Digite sua mensagem aqui . . ." required></textarea><br>
+            <input type="text" name="honeypot" style="display:none">
+            <input type="hidden" name="replyTo" value="washingtonlopes574@gmail.com">
+            <input type="hidden" name="redirectTo" value="https://washingtonlopesss.github.io/ProjectArgusPav/docs/html/sendConfirmation.html">
+            <div class="btns-form">
+                <button type="reset">Limpar</button>
+                <button type="submit" class="btn-contato"">Enviar</button>
+            </div>
+        </form>
+        
+        <form action="https://api.staticforms.xyz/submit" method="post" class="form-orcamento form-selection">
+            <input type="hidden" name="accessKey" value="eab2eadb-5b26-4aff-8687-9ebe2bd9f3d5">
+            <input type="hidden" name="replyTo" value="washingtonlopes574@gmail.com">
+            <input type="hidden" name="redirectTo" value="https://washingtonlopesss.github.io/ProjectArgusPav/docs/html/sendConfirmation.html">
+            <input type="hidden" id="assunto_contato" name="subject" class="input-contato" required value="ORÇAMENTO VIA WEBSITE">
+            <label for="nome_orcamento">Nome:</label>
+            <input type="text" id="nome_orcamento" name="$Nome" class="input-orcamento" placeholder="Digite seu nome aqui . . ." required><br>
+            <label for="cargo_orcamento">Cargo:</label>
+            <input type="text" id="cargo_orcamento" name="$Cargo" class="input-orcamento" placeholder="Digite seu cargo aqui . . ." required><br>
+            <label for="razao_social_orcamento">Razão Social:</label>
+            <input type="text" id="razao_social_orcamento" name="$Razão Social" class="input-orcamento" placeholder="Digite a razão social da empresa aqui . . ." required><br>
+            <label for="cnpj_orcamento">CNPJ:</label>
+            <input type="text" id="cnpj_orcamento" name="$CNPJ" class="input-orcamento" placeholder="Digite o CNPJ aqui . . ." required><br>
+            <label for="telefone_orcamento">Telefone:</label>
+            <input type="tel" id="telefone_orcamento" name="$Telefone" class="input-orcamento" placeholder="Digite seu telefone aqui . . ." required><br>
+            <label for="email_orcamento">E-mail:</label>
+            <input type="email" id="email_orcamento" name="$E-mail" class="input-orcamento" placeholder="Digite seu e-mail aqui . . ." required><br>
+            <label for="mensagem_orcamento">Mensagem:</label>
+            <textarea id="mensagem_orcamento" name="$Mensagem" class="textarea-orcamento" placeholder="Digite sua mensagem aqui . . ." required></textarea><br>
+            <div class="btns-form">
+                <button type="reset">Limpar</button>
+                <button type="submit" class="btn-contato">Enviar</button>
+            </div>
+        </form>        
+        
+        <form action="https://api.staticforms.xyz/submit" method="post" class="form-locacao form-selection">
+            <input type="hidden" name="accessKey" value="eab2eadb-5b26-4aff-8687-9ebe2bd9f3d5">
+            <input type="hidden" name="replyTo" value="washingtonlopes574@gmail.com">
+            <input type="hidden" name="redirectTo" value="https://washingtonlopesss.github.io/ProjectArgusPav/docs/html/sendConfirmation.html">
+            <input type="hidden" id="assunto_contato" name="subject" class="input-contato" required value="CONTATO LOCAÇÃO VIA WEBSITE">
+            <label for="nome_locacao">Nome:</label>
+            <input type="text" id="nome_locacao" name="$Nome" class="input-locacao" placeholder="Digite seu nome aqui . . ." required><br>
+            <label for="telefone_locacao">Telefone:</label>
+            <input type="tel" id="telefone_locacao" name="$Telefone" class="input-locacao" placeholder="Digite seu telefone aqui . . ." required><br>
+            <label for="email_locacao">E-mail:</label>
+            <input type="email" id="email_locacao" name="$E-mail" class="input-locacao" placeholder="Digite seu e-mail aqui . . ." required><br>
+            <label for="equipamento_locacao">Equipamento para locação:</label>
+            <input type="text" id="equipamento_locacao" name="$Equipamento" class="input-locacao" placeholder="Digite o nome do equipamento aqui . . ." required><br>
+            <div class="btns-form">
+                <button type="reset">Limpar</button>
+                <button type="submit" class="btn-contato">Enviar</button>
+            </div>
+        </form>        
+        
+        <form action="https://api.staticforms.xyz/submit" method="post" class="form-trabalhe-conosco form-selection">
+            <input type="hidden" name="accessKey" value="eab2eadb-5b26-4aff-8687-9ebe2bd9f3d5">
+            <input type="hidden" name="replyTo" value="washingtonlopes574@gmail.com">
+            <input type="hidden" name="redirectTo" value="https://washingtonlopesss.github.io/ProjectArgusPav/docs/html/sendConfirmation.html">
+            <input type="hidden" id="assunto_contato" name="subject" class="input-contato" required value="TRABALHE CONOSCO VIA WEBSITE">
+            <label for="nome_trabalho">Nome:</label>
+            <input type="text" id="nome_trabalho" name="$Nome" class="input-trabalho" placeholder="Digite seu nome aqui . . ." required><br>
+            <label for="data_nascimento_trabalho">Data de Nascimento:</label>
+            <input type="date" id="data_nascimento_trabalho" name="$Data de Nascimento" class="input-trabalho" required><br>
+            <div class="labels-select">
+                <div>
+                    <label for="sexo_trabalho">Sexo:</label>
+                    <select id="sexo_trabalho" name="$Sexo" class="input-trabalho" required>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="estado_civil_trabalho">Estado Civil:</label>
+                    <select id="estado_civil_trabalho" name="$Estado Civil" class="input-trabalho" required>
+                        <option value="solteiro">Solteiro(a)</option>
+                        <option value="casado">Casado(a)</option>
+                        <option value="divorciado">Divorciado(a)</option>
+                        <option value="viuvo">Viúvo(a)</option>
+                    </select>
+                </div>
+            </div>
+            <label for="linkedin_trabalho">Link para LinkedIn:</label>
+            <input type="url" id="linkedin_trabalho" name="$Linkedin" class="input-trabalho" placeholder="Cole o link do seu perfil no LinkedIn aqui . . ."><br>
+            <label for="email_trabalho">E-mail:</label>
+            <input type="email" id="email_trabalho" name="$E-mail" class="input-trabalho" placeholder="Digite seu e-mail aqui . . ." required><br>
+            <label for="telefone_trabalho">Telefone:</label>
+            <input type="tel" id="telefone_trabalho" name="$Telefone" class="input-trabalho" placeholder="Digite seu telefone aqui . . ." required><br>
+            <label for="qualificacoes_trabalho">Resumo de Qualificações:</label>
+            <textarea id="qualificacoes_trabalho" name="$Resumo das Qualificações" class="textarea-trabalho" placeholder="Resuma suas qualificações aqui . . ." required></textarea><br>
+            <label for="experiencias_trabalho">Resumo de Experiências:</label>
+            <textarea id="experiencias_trabalho" name="$Resumo de Experiencias" class="textarea-trabalho" placeholder="Resuma suas experiências aqui . . ." required></textarea><br>
+            <label for="observacoes_trabalho">Observações:</label>
+            <textarea id="observacoes_trabalho" name="$Outras Observações" class="textarea-trabalho" placeholder="Digite suas observações aqui . . ."></textarea><br>
+            <div class="btns-form">
+                <button type="reset">Limpar</button>
+                <button type="submit" class="btn-contato">Enviar</button>
+            </div>
+        </form>        
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+          <div class="footer-logo">
+            <img class="img-logo-footer" src="/docs/branding/completo-verde-transparente.png" alt="Logo da Empresa">
+          </div>
+      
+          <div class="footer-nav">
+            <ul>
+              <li><a href="#home">Inicio</a></li>
+              <li><a href="#services">Serviços</a></li>
+              <li><a href="#construction">Obras</a></li>
+              <li><a href="#equipment">Equipamentos</a></li>
+              <li><a href="#contacts">Contatos</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-contact">
+            <ul>
+              <li>Telefone: (11) 1234-5678</li>
+              <li>Email: contato@empresa.com.br</li>
+              <li>Av. Brig. Faria Lima, 3477 - 18º Andar - Itaim Bibi, São Paulo - SP, 04538-133</li>
+            </ul>
+          </div>
+        </div>
+    </footer>
+    <footer class="footer-rights">
+        <p>© 2024 | Argus Pavimenta&ccedil;&atilde;o | Todos os Direitos Reservados | Desenvolvido por Washington Lopes</p>
+    </footer>
+    <script src="/docs/scripts/script.js"></script>
+</body>
+</html>
