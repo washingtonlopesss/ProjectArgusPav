@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Nexa';
-    src: url('../Fonts/nexa/Nexa-ExtraLight.ttf') format('truetype')
-         url('../Fonts/nexa/Nexa-Heavy.ttf') format('truetype'); 
+    src: url('../fonts/nexa/Nexa-ExtraLight.ttf') format('truetype')
+         url('../fonts/nexa/Nexa-Heavy.ttf') format('truetype'); 
 }
 
 * {

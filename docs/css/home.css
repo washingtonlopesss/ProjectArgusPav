@@ -1,15 +1,15 @@
 @font-face {
     font-family: 'GandhiSans';
-    src: url('../Fonts/gandhi-sans/GandhiSans-Regular.otf') format('opentype'),
-         url('../Fonts/gandhi-sans/GandhiSans-Bold.otf') format('opentype'),
-         url('../Fonts/gandhi-sans/GandhiSans-Italic.otf') format('opentype'),
-         url('../Fonts/gandhi-sans/GandhiSans-BoldItalic.otf') format('opentype');
+    src: url('../fonts/gandhi-sans/') format('opentype'),
+         url('../fonts/gandhi-sans/GandhiSans-Bold.otf') format('opentype'),
+         url('../fonts/gandhi-sans/GandhiSans-Italic.otf') format('opentype'),
+         url('../fonts/gandhi-sans/GandhiSans-BoldItalic.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'Nexa';
-    src: url('../Fonts/nexa/Nexa-ExtraLight.ttf') format('truetype')
-         url('../Fonts/nexa/Nexa-Heavy.ttf') format('truetype'); 
+    src: url('../fonts/nexa/Nexa-ExtraLight.ttf') format('truetype')
+         url('../fonts/nexa/Nexa-Heavy.ttf') format('truetype'); 
 }
 
 * {
